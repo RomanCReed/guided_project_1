@@ -3,8 +3,8 @@ let climateSpan;
 let terrainSpan;
 let gravitySpan;
 let populationSpan;
-let filmsUl;
-let charactersUl;
+let filmsDiv;
+let charactersDiv;
 const baseUrl = `https://swapi2.azurewebsites.net/api`;
 
 // Runs on page load
@@ -54,7 +54,7 @@ async function fetchFilms(planet) {
   return films;
 }
 
-const renderCharacter = planet => {
+const renderPlanet = planet => {
   document.title = `SWAPI - ${planet?.name}`;  // Just to make the browser tab say their name
   nameH1.textContent = planet?.name;
   climateSpan.textContent = planet?.climate;
