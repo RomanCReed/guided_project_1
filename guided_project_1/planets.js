@@ -63,7 +63,7 @@ const renderPlanet = (planet) => {
   );
   charactersUl.innerHTML = charactersLis.join("");
   const filmsLis = planet?.films?.map(
-    (film) => `<li><a href="/film.html?id=${film.id}">${film.title}</li>`
+    (film) => `<li><a href="/films.html?id=${film.id}">${film.title}</li>`
   );
   filmsUl.innerHTML = filmsLis.join("");
 };
